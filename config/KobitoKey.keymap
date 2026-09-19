@@ -77,20 +77,20 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&mo 0      &trans  &trans          &trans              &trans          &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans  &kp LS(LG(N4))  &kp LC(LS(LG(N4)))  &kp LS(LG(N4))  &trans  &trans    &trans    &trans    &trans
-&trans     &trans  &trans          &trans              &trans          &trans  &trans    &trans    &trans    &trans
-&kp LSHFT  &trans  &to 0           &mkp MB1            &mkp MB2        &trans  &trans    &trans    &to 0     &kp RALT
+&mo 0      &trans  &trans  &trans              &trans          &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans     &trans  &trans  &kp LC(LS(LG(N4)))  &kp LS(LG(N4))  &trans  &trans    &trans    &trans    &trans
+&trans     &trans  &trans  &trans              &trans          &trans  &trans    &trans    &trans    &trans
+&kp LSHFT  &trans  &to 0   &mkp MB1            &mkp MB2        &trans  &trans    &trans    &to 0     &kp RALT
             >;
         };
 
         layer4 {
             label = "BLUETOOTH";
             bindings = <
-&trans             &kp LC(LS(LG(W)))  &kp LC(LS(LG(E)))  &kp LC(LS(LG(R)))  &kp LC(LS(LG(T)))  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LC(LS(LG(A)))  &kp LC(LS(LG(S)))  &kp LC(LS(LG(D)))  &kp LC(LS(LG(F)))  &kp LC(LS(LG(G)))  &trans        &trans        &trans        &trans        &trans
-&trans             &kp LC(LS(LG(X)))  &kp LC(LS(LG(C)))  &kp LC(LS(LG(V)))  &kp LC(LS(LG(B)))  &trans        &trans        &trans        &trans        &trans
-&trans             &trans             &trans             &trans             &trans             &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans             &kp LC(LS(LG(W)))  &kp LC(LS(LG(E)))  &kp LC(LS(LG(R)))  &kp LC(LS(LG(T)))  &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LC(LS(LG(A)))  &kp LC(LS(LG(S)))  &kp LC(LS(LG(D)))  &kp LC(LS(LG(F)))  &kp LC(LS(LG(G)))  &kp LC(LS(LG(UP)))    &trans        &trans        &trans        &trans
+&trans             &kp LC(LS(LG(X)))  &kp LC(LS(LG(C)))  &kp LC(LS(LG(V)))  &kp LC(LS(LG(B)))  &kp LC(LS(LG(DOWN)))  &trans        &trans        &trans        &trans
+&trans             &trans             &trans             &trans             &trans             &trans                &trans        &trans        &trans        &bt BT_CLR
             >;
         };
     };
