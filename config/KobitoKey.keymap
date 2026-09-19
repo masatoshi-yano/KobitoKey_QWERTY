@@ -33,6 +33,15 @@
         };
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        bluetooth_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,6 +81,16 @@
 &trans     &trans  &kp LS(LG(N4))  &kp LC(LS(LG(N4)))  &trans    &trans  &trans    &trans    &trans    &trans
 &trans     &trans  &trans          &trans              &trans    &trans  &trans    &trans    &trans    &trans
 &kp LSHFT  &trans  &to 0           &mkp MB1            &mkp MB2  &trans  &trans    &trans    &to 0     &kp RALT
+            >;
+        };
+
+        layer4 {
+            label = "BLUETOOTH";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
             >;
         };
     };
