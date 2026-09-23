@@ -87,8 +87,8 @@
         layer4 {
             label = "BLUETOOTH";
             bindings = <
-&none              &kp LC(LS(LG(W)))  &kp LC(LS(LG(E)))  &kp LC(LS(LG(R)))  &kp LC(LS(LG(T)))  &kp LC(LS(LG(Y)))     &none  &none         &none         &none
-&kp LC(LS(LG(A)))  &kp LC(LS(LG(S)))  &kp LC(LS(LG(D)))  &kp LC(LS(LG(F)))  &kp LC(LS(LG(G)))  &kp LC(LS(LG(UP)))    &none  &none         &kp LG(LBKT)  &kp LG(RBKT)
+&none              &kp LC(LS(LG(W)))  &kp LC(LS(LG(E)))  &kp LC(LS(LG(R)))  &kp LC(LS(LG(T)))  &kp LC(LS(LG(Y)))     &kp LC(LS(SPACE))  &none         &none         &none
+&kp LC(LS(LG(A)))  &kp LC(LS(LG(S)))  &kp LC(LS(LG(D)))  &kp LC(LS(LG(F)))  &kp LC(LS(LG(G)))  &kp LC(LS(LG(UP)))    &kp LG(LS(V))      &none         &kp LG(LBKT)  &kp LG(RBKT)
 &none              &kp LC(LS(LG(X)))  &kp LC(LS(LG(C)))  &kp LC(LS(LG(V)))  &kp LC(LS(LG(B)))  &kp LC(LS(LG(DOWN)))  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
 &none              &none              &none              &none              &none              &none                 &none  &none         &none         &bt BT_CLR
             >;
