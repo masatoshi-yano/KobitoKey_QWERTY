@@ -31,6 +31,13 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
+
+        // V＋B を同時に押している間だけ BT レイヤー（6）
+        combo_bt {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&mo 6>;
+        };
     };
 
     macros {
@@ -115,6 +122,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer6 {
+            label = "BT";
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none         &none         &none
+&none  &none  &none  &none  &none  &none  &none  &none         &none         &none
+&none  &none  &none  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
+&none  &none  &none  &none  &none  &none  &none  &none         &none         &bt BT_CLR
             >;
         };
     };
