@@ -33,8 +33,10 @@
         };
 
         // V＋B を同時に押している間だけ BT レイヤー（6）
+        // 文字を打っている途中（直前 150ms 以内にキー入力あり）では入らない。"obvious" などの b→v で誤って入るのを防ぐ
         combo_bt {
             timeout-ms = <50>;
+            require-prior-idle-ms = <150>;
             key-positions = <23 24>;
             bindings = <&mo 6>;
         };
