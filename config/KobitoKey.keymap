@@ -99,7 +99,7 @@
             label = "SYMBOL";
             bindings = <
 &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
-&trans     &kp HOME  &kp UP    &kp END     &kp EQUAL  &kp UNDER  &kp MINUS  &kp SQT    &kp LBKT  &kp RBKT
+&kp LCTRL  &kp HOME  &kp UP    &kp END     &kp EQUAL  &kp UNDER  &kp MINUS  &kp SQT    &kp LBKT  &kp RBKT
 &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT   &kp PG_DN  &trans     &kp LBRC   &kp RBRC   &kp BSLH  &kp GRAVE
 &trans     &trans    &trans    &trans      &trans     &trans     &trans     &trans     &trans    &trans
             >;
